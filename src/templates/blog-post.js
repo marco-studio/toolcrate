@@ -34,7 +34,8 @@ export default ({ data }) => {
         </Link>
         <div className="ml-4 md:ml-6">
           <div className="text-gray-700 text-sm md:text-base">
-            {formatDate(post.pubDate)} - {formatTime(post.itunes.duration)}
+            {formatDate(post.pubDate)}
+            {/* - {formatTime(post.itunes.duration)} */}
           </div>
 
           <div className="mt-1 md:mt-2 mdx:mt-4 font-medium text-gray-900 md:leading-snug md:text-2xl lgx:text-3xl">

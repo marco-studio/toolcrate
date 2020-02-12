@@ -5,6 +5,7 @@ import stitcher from "../images/stitcher.png";
 import overcast from "../images/overcast.png";
 import pocket from "../images/pocketcasts.png";
 import beaker from "../images/beaker.svg";
+import player from "../images/player.svg";
 
 const WhereToListenSmall = () => {
   const data = useStaticQuery(graphql`

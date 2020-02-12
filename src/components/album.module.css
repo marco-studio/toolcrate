@@ -67,7 +67,9 @@
   transform-origin: 0;
   /* background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%); */
   /* background: aliceblue; */
-  background: #edf2f7;
+  /* background: #edf2f7; */
+  /* background: rgb(33, 40, 61); */
+  background: rgb(30, 32, 52);
   /* background: rgb(10, 51, 67); */
   /* background: rgb(3, 152, 149); */
   /* background: rgb(6, 136, 142); */
@@ -79,7 +81,9 @@
   /* background: rgb(10, 51, 67); */
   /* background: rgb(27, 76, 115); */
   /* background: rgb(3, 152, 149); */
-  background: rgb(6, 136, 142);
+  /* background: rgb(6, 136, 142); */
+  /* background: rgb(33, 40, 61); */
+  background: rgb(30, 32, 52);
 }
 
 /* position: relative; */

@@ -26,16 +26,16 @@ const IndexPage = ({ data }) => {
 
       <div>
         {/* ###############################    HEADER START ########################################### */}
-        <div className={`${albumStyle.slope} bg-gray-200`} />
+        <div className={`${albumStyle.slope} `} />
         <div
           className=" max-w-lg md:max-w-2xl pl-12 pt-16 pr-12 md:flex md:justify-end 
           md:flex-row-reverse m-auto md:pl-4 md:pr-4 lg:max-w-3xl xl:max-w-5xl  xl:m-auto relative mdx:pt-24 lgx:max-w-960 lgx:px-12  xl-mx-0"
         >
           <div className="md:ml-8 md:mt-3 lg:ml-12">
-            <div className="text-4xl font-medium md:text-3xl md:font-bold text-gray-900 lg:text-4xl">
+            <div className="text-4xl font-medium md:text-3xl md:font-bold text-gray-100 lg:text-4xl">
               {data.site.siteMetadata.title}
             </div>
-            <div className="text-base mt-3 md:text-base text-gray-900">
+            <div className="text-base mt-3 md:text-base text-gray-100">
               By {data.site.siteMetadata.author}
             </div>
             <ul className="md:flex mt-6 hidden text-gray-100">
@@ -128,16 +128,10 @@ const IndexPage = ({ data }) => {
            md:text-xl"
           />
           <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Hey, meet Bilal, Kwaku, Patrick &amp; Tom. 4 Black &amp; Mixed-Race
-            guys who became friends whilst studying at Cambridge University.
-            Join us as we talk about life before, during and well - after 'The
-            Bridge'. Expect chats about life, and our own experiences
+            Weekly Podcast Radio Show focused on the world of Music Production &
+            the Business of Music
           </div>
-          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Cast:
-            <br /> Kwaku: @KwakuDapaah_ <br /> Patrick: @CariocoLondrino <br />{" "}
-            Bilal: @Tweetsbybilal <br /> Tom: @TomTheEconomist
-          </div>
+          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl" />
           <ul className={`flex justify-center mt-12 md:mt-16 text-gray-900`}>
             {/* <li className="">
               <a href={data.site.siteMetadata.facebook}>
@@ -243,7 +237,7 @@ const IndexPage = ({ data }) => {
                       {node.itunes.summary}
                     </div>
                     <div className="text-sm text-gray-700 font-medium mt-2">
-                      {formatTime(node.itunes.duration)}
+                      {/* {formatTime(node.itunes.duration)} */}
                     </div>
                   </div>
                 </Link>
@@ -253,7 +247,9 @@ const IndexPage = ({ data }) => {
           <div className="flex justify-center mt-16 lgx:max-w-960 lgx:mx-12">
             <button
               onClick={() => setCount(count + 5)}
-              className="bg-teal-500 text-white font-bold py-3 px-8 rounded"
+              className={`${
+                albumStyle.footer
+              } text-white font-medium py-3 px-8 rounded`}
             >
               <span>Load More</span>
             </button>
